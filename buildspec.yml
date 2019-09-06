@@ -1,0 +1,26 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      docker: 18
+    finally:
+      - echo Exit install phase
+  pre_build:
+    commands:
+      - echo Entered the pre_build phase...
+    finally:
+      - echo Exit pre-build phase
+  build:
+    commands:
+      - echo Entered the build phase...
+    finally:
+      - echo Exit build phase
+  post_build:
+    commands:
+      - echo Entered the post_build phase...
+    finally:
+      - echo Exit post-build phase
+artifacts:
+  files:
+    - index.html
