@@ -28,3 +28,4 @@ artifacts:
     - index.html
     - HelloWorld.java
     - ec2-app.yml
+    - S3-main.yml
