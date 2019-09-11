@@ -27,3 +27,4 @@ artifacts:
   files:
     - index.html
     - HelloWorld.java
+    - ec2-app.yml
