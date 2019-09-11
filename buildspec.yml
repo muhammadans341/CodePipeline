@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      docker: 18
+      java: openjdk8
     finally:
       - echo Exit install phase
   pre_build:
@@ -24,3 +24,4 @@ phases:
 artifacts:
   files:
     - index.html
+    - Main.java
