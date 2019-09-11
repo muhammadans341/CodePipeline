@@ -1,0 +1,50 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+Parameters:
+  s3MainBucketName1:
+    Type: String
+    Description: Name of my bucket
+    Default: Cfn-1-sample-bucket-692560313237-us-east-1
+  s3MainBucketName2:
+    Type: String
+    Description: Name of my bucket
+    Default: Cfn-2-sample-bucket-692560313237-us-east-1
+  s3MainBucketName3:
+    Type: String
+    Description: Name of my bucket
+    Default: Cfn-3-sample-bucket-692560313237-us-east-1
+
+
+Resources:
+
+  s3NestedStackBucket1:
+    Type: AWS::CloudFormation::Stack
+    Properties:  
+
+      TemplateURL: https://sample-bucket-692560313237-us-east-1.s3.amazonaws.com/S3-app.yml  
+
+      Parameters: 
+        s3AppBucketName: !Ref s3MainBucketName1
+
+  s3NestedStackBucket2:
+    Type: AWS::CloudFormation::Stack
+    Properties:  
+
+      TemplateURL: https://sample-bucket-692560313237-us-east-1.s3.amazonaws.com/S3-app.yml  
+
+      Parameters: 
+        s3AppBucketName: !Ref s3MainBucketName2
+
+  s3NestedStackBucket3:
+    Type: AWS::CloudFormation::Stack
+    Properties:  
+
+      TemplateURL: https://sample-bucket-692560313237-us-east-1.s3.amazonaws.com/S3-app.yml  
+
+      Parameters: 
+        s3AppBucketName: !Ref s3MainBucketName3
+
+  
+
+
+
