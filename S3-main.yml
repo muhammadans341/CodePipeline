@@ -4,15 +4,15 @@ Parameters:
   s3MainBucketName1:
     Type: String
     Description: Name of my bucket
-    Default: Cfn-1-sample-bucket-692560313237-us-east-1
+    Default: cfn-1-sample-bucket-692560313237-us-east-1
   s3MainBucketName2:
     Type: String
     Description: Name of my bucket
-    Default: Cfn-2-sample-bucket-692560313237-us-east-1
+    Default: cfn-2-sample-bucket-692560313237-us-east-1
   s3MainBucketName3:
     Type: String
     Description: Name of my bucket
-    Default: Cfn-3-sample-bucket-692560313237-us-east-1
+    Default: cfn-3-sample-bucket-692560313237-us-east-1
 
 
 Resources:
