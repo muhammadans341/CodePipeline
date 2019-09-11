@@ -14,6 +14,8 @@ phases:
   build:
     commands:
       - echo Entered the build phase...
+      - javac -cp . HelloWorld.java
+      - java -cp . HelloWorld
     finally:
       - echo Exit build phase
   post_build:
@@ -24,4 +26,4 @@ phases:
 artifacts:
   files:
     - index.html
-    - Main.java
+    - HelloWorld.java
