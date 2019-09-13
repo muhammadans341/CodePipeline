@@ -29,3 +29,4 @@ artifacts:
     - HelloWorld.java
     - ec2-app.yml
     - S3-main.yml
+    - appspec.yml
